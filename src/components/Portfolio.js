@@ -1,0 +1,121 @@
+import React from 'react';
+import dogModel from '../images/dogModel.jpg';
+import threeLogos from '../images/threeLogos.png';
+import max from '../images/max.jpg';
+import twoPals from '../images/twoPals.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
+import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
+import 'react-popupbox/dist/react-popupbox.css';
+
+const Portfolio = () => {
+
+//Rock-Paper-Scissors
+
+const openPopupboxRockPaper = () => {
+    const content = (
+        <>
+            <h2 className='popup-title'>Rock Paper Scissors Game</h2>
+            <img className='portfolio-image-popupbox' src={threeLogos} alt='HTML, CSS, JS Logos...'/>
+            <p>A rock paper scissors game based off a Youtube tutorial I followed.
+                The game uses features such as; HTML, CSS, and JS.
+            </p>
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/rock-paper-scissor', '_blank')}>Rock-Paper-Scissors</a>
+            <br />
+            <b>Try it out!:</b> <a className='hyper-link' onClick={() => window.open('https://rock-paper-portfolio.netlify.app/', '_blank')}>Rock-Paper-Scissors</a>
+        </>
+    )
+    PopupboxManager.open({content})
+}
+
+const popupboxConfigRockPaper = {
+    titleBar: {
+        enable: false,
+        text: 'No title'
+    },
+    fadeIn: true,
+    fadeInSpeed:500
+}
+//Project 2
+
+const openPopupboxProject2 = () => {
+    const content = (
+        <>
+            <img className='portfolio-image-popupbox' src={threeLogos} alt='Placeholder for project 2'/>
+            <p>Some writing to fill in the blanks and take up space.
+            This should have info about whatever project you add here.</p>
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://google.com', '_blank')}>https://google.com</a>
+        </>
+    )
+    PopupboxManager.open({content})
+}
+
+//Project 3
+
+const openPopupboxProject3 = () => {
+    const content = (
+        <>
+            <img className='portfolio-image-popupbox' src={max} alt='Placeholder for project 3'/>
+            <p>Some writing to fill in the blanks and take up space.
+            This should have info about whatever project you add here.</p>
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://google.com', '_blank')}>https://google.com</a>
+        </>
+    )
+    PopupboxManager.open({content})
+}
+
+//Project 4
+
+const openPopupboxProject4 = () => {
+    const content = (
+        <>
+            <img className='portfolio-image-popupbox' src={twoPals} alt='Placeholder for project 4'/>
+            <p>Some writing to fill in the blanks and take up space.
+            This should have info about whatever project you add here.</p>
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://google.com', '_blank')}>https://google.com</a>
+        </>
+    )
+    PopupboxManager.open({content})
+}
+ 
+
+    return (
+        <div id='portfolio' className='portfolio-wrapper'>
+            <div className='container'>
+                <h1 className="text-uppercase text-center py-5">portfolio</h1>
+                <div className='row'>
+                    <div className='col-lg-3 col-md-6 col-sm-6'>
+                        <div className='portfolio-image-box' onClick={openPopupboxRockPaper}>
+                            <img className='portfolio-image' src={threeLogos} alt='HTML, CSS, JS Logos...' /> 
+                            <div className='overflow'></div>
+                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                        </div>
+                    </div>
+                    <div className='col-lg-3 col-md-6 col-sm-6'>
+                        <div className='portfolio-image-box' onClick={openPopupboxProject2}>
+                            <img className='portfolio-image' src={max} alt='Max...' />
+                            <div className='overflow'></div>
+                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                        </div>
+                    </div>
+                    <div className='col-lg-3 col-md-6 col-sm-6'>
+                        <div className='portfolio-image-box' onClick={openPopupboxProject3}>
+                            <img className='portfolio-image' src={dogModel} alt='Max laying in the sun...' />
+                            <div className='overflow'></div>
+                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                        </div>
+                    </div>
+                    <div className='col-lg-3 col-md-6 col-sm-6'>
+                        <div className='portfolio-image-box' onClick={openPopupboxProject4}>
+                            <img className='portfolio-image' src={twoPals} alt='Max and Nikki' />
+                            <div className='overflow'></div>
+                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <PopupboxContainer {...popupboxConfigRockPaper}/>
+        </div>
+    )
+}
+export default Portfolio;
