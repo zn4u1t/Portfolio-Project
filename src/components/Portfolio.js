@@ -1,7 +1,7 @@
 import React from 'react';
 import dogModel from '../images/dogModel.jpg';
 import threeLogos from '../images/threeLogos.png';
-import max from '../images/max.jpg';
+import puzzle from '../images/puzzle.jpg';
 import twoPals from '../images/twoPals.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
@@ -36,15 +36,15 @@ const popupboxConfigRockPaper = {
     fadeIn: true,
     fadeInSpeed:500
 }
-//Project 2
+//Puzzle Camera Game
 
-const openPopupboxProject2 = () => {
+const openPopupboxPuzzleCam = () => {
     const content = (
         <>
-            <img className='portfolio-image-popupbox' src={threeLogos} alt='Placeholder for project 2'/>
-            <p>Some writing to fill in the blanks and take up space.
-            This should have info about whatever project you add here.</p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://google.com', '_blank')}>https://google.com</a>
+            <h2 className='popup-title'>Puzzle Cam</h2>
+            <img className='portfolio-image-popupbox' src={puzzle} alt='Placeholder for project 2'/>
+            <p>A work in progress puzzle game, that uses your camera to generate a puzzle.</p>
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/Puzzlecam-game', '_blank')}>Puzzle Cam Repo</a>
         </>
     )
     PopupboxManager.open({content})
@@ -55,7 +55,7 @@ const openPopupboxProject2 = () => {
 const openPopupboxProject3 = () => {
     const content = (
         <>
-            <img className='portfolio-image-popupbox' src={max} alt='Placeholder for project 3'/>
+            <img className='portfolio-image-popupbox' src={puzzle} alt='Placeholder for project 3'/>
             <p>Some writing to fill in the blanks and take up space.
             This should have info about whatever project you add here.</p>
             <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://google.com', '_blank')}>https://google.com</a>
@@ -92,8 +92,8 @@ const openPopupboxProject4 = () => {
                         </div>
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-6'>
-                        <div className='portfolio-image-box' onClick={openPopupboxProject2}>
-                            <img className='portfolio-image' src={max} alt='Max...' />
+                        <div className='portfolio-image-box' onClick={openPopupboxPuzzleCam}>
+                            <img className='portfolio-image' src={puzzle} alt='Puzzle Cam...' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
                         </div>

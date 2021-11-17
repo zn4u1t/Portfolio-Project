@@ -7,7 +7,7 @@ const Contacts = () => {
 
     const {register, handleSubmit, errors} = useForm();
 
-    const serviceID = 'service_ID';
+    const serviceID = 'service_3dpw4ak';
     const templateID = 'template_ID';
     const userID = 'user_aF5svgRg0ktEFF9NBMz7Y';
 
@@ -38,7 +38,7 @@ const Contacts = () => {
         <div id='contacts' className='contacts'>
             <div className='text-center'>
                 <h1>Contact Me</h1>
-                <p>Please fill out the form and i will contact you as soon as possible.</p>
+                <p>Please fill out the form and I will contact you as soon as possible.</p>
                 <span className='success-message'>{successMessage}</span>
             </div>
             <div className='container'>
