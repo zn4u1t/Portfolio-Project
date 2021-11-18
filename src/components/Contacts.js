@@ -3,36 +3,35 @@ import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
 
 const Contacts = () => {
-    const [successMessage, setSuccessMessage] = useState('');
-
-    const {register, handleSubmit, errors} = useForm();
-
-    const serviceID = 'service_3dpw4ak';
-    const templateID = 'template_ID';
-    const userID = 'user_aF5svgRg0ktEFF9NBMz7Y';
-
+    const [successMessage, setSuccessMessage] = useState("");
+    const { handleSubmit} = useForm();
+  
+    const serviceID = "service_gMail";
+    const templateID = "template_ID";
+    const userID = "user_aF5svgRg0ktEFF9NBMz7Y";
+  
     const onSubmit = (data, r) => {
-        sendEmail(
-            serviceID,
-            templateID,
-            {
-                name: data.name,
-                phone: data.phone,
-                email: data.email,
-                subject: data.subject,
-                description: data.description
-            },
-            userID
-            )
-            r.target.reset();
+      sendEmail(
+        serviceID,
+        templateID,
+        {
+          name: data.name,
+          phone: data.phone,
+          email: data.email,
+          subject: data.subject,
+          description: data.description
+        },
+        userID
+      )
+      r.target.reset();
     }
-
+  
     const sendEmail = (serviceID, templateID, variables, userID) => {
-        emailjs.send(serviceID, templateID, variables, userID)
-          .then(() => {
-              setSuccessMessage('Form sent successfully!');
-          }).catch(err => console.error('Something went wrong! ${err}'));
-      };
+      emailjs.send(serviceID, templateID, variables, userID)
+        .then(() => {
+          setSuccessMessage("Form sent successfully! I'll contact you as soon as possible.");
+        }).catch(err => console.error(`Something went wrong ${err}`));
+    }
 
     return (
         <div id='contacts' className='contacts'>
@@ -52,8 +51,6 @@ const Contacts = () => {
                                 className='form-control'
                                 placeholder='Name'
                                 name='name'
-                                message = 'Please enter a name with less than 20 characters'
-                                {...register("name", { required: true, maxLength: 20 })}
                                 />
                                 <div className='line'></div>
                             </div>
@@ -108,4 +105,4 @@ const Contacts = () => {
     )
 }
 
-export default Contacts
+export default Contacts;

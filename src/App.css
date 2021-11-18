@@ -20,7 +20,7 @@
 body {
   font-family: "Roboto Condesed", sans-serif !important;
 }
-/*******************NAVBAR**************************/
+/*******************NAVBAR*************************/
 
 nav {
   z-index: 2;
@@ -67,7 +67,7 @@ nav ul li {
   }
 }
 
-.navbar- > li > a.active,
+.navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
