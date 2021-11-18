@@ -7,7 +7,7 @@ const Contacts = () => {
     const { handleSubmit} = useForm();
   
     const serviceID = "service_gMail";
-    const templateID = "template_ID";
+   // const templateID = "template_ID";
     const userID = "user_aF5svgRg0ktEFF9NBMz7Y";
   
     const onSubmit = (data, r) => {
