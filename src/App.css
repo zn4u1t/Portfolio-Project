@@ -65,6 +65,9 @@ nav ul li {
     width: 3.75rem;
     margin-top: 0.125rem;
   }
+  .navbar-nav > li > a.active {
+    border-top: 0.1875rem solid var(--primary-orange);
+  }
 }
 
 .navbar-nav > li > a.active,
