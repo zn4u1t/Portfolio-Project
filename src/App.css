@@ -214,7 +214,7 @@ nav ul li {
 }
 
 .services h1 {
-  color: #b0b0b0;
+  color: var(--primary-orange);
   text-transform: uppercase;
   font-family: "Amatic SC", cursive;
 }
@@ -297,7 +297,7 @@ nav ul li {
 }
 
 .experience h1 {
-  color: #b0b0b0;
+  color: var(--primary-orange);
   text-transform: uppercase;
   font-family: "Amatic SC", cursive;
 }
@@ -395,7 +395,7 @@ nav ul li {
 }
 
 .portfolio-wrapper h1 {
-  color: #b0b0b0;
+  color: var(--primary-orange);
   font-family: "Amatic SC", cursive;
 }
 

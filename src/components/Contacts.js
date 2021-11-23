@@ -75,8 +75,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Email"
                   name="email"
-                  message = 'Please enter an email address with less than 20 characters'
-                  {...register("email", { required: true, maxLength: 20 })}
+                  message = 'Please enter an email address with less than 100 characters'
+                  {...register("email", { required: true, maxLength: 100 })}
                 />
                 <div className="line"></div>
               </div>
@@ -101,8 +101,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Please provide a brief description."
                   name="description"
-                  message = 'Please enter a description with less than 500 characters'
-                  {...register("description", { required: true, maxLength: 500 })}
+                  message = 'Please enter a description with less than 1000 characters'
+                  {...register("description", { required: true, maxLength: 1000 })}
                 ></textarea>
                 <div className="line"></div>
               </div>
