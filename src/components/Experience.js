@@ -37,7 +37,7 @@ const Experience = () => {
                     <div className='marker'></div>
                     <div className='timeline-content'>
                         <h3>2021</h3>
-                        <ul>Acheived FreeCodeCamp 300 hour Javascript Certificate.</ul>
+                        <ul>Obtained FreeCodeCamp 300 hour Javascript Certificate.</ul>
                         <ul>Built website portfolio in React.</ul>
                     </div>
                 </div>

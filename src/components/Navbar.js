@@ -39,16 +39,16 @@ const Navbar = () => {
                             <Link smooth={true} to='home' className="nav-link" onClick={handleClick} >Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth={true} to='about' offset={-110} className="nav-link" onClick={handleClick} >About Me</Link>
+                            <Link smooth={true} to='about' offset={-80} className="nav-link" onClick={handleClick} >About Me</Link>
                         </li>
                         <li className="nav-item">
                             <Link smooth={true} to='services' offset={-110} className="nav-link" onClick={handleClick} >My Pages</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth={true} to='experience' offset={-110} className="nav-link" onClick={handleClick} >Experience</Link>
+                            <Link smooth={true} to='experience' offset={-100} className="nav-link" onClick={handleClick} >Experience</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth={true} to='portfolio' offset={-110} className="nav-link" onClick={handleClick} >Portfolio</Link>
+                            <Link smooth={true} to='portfolio' offset={-90} className="nav-link" onClick={handleClick} >Portfolio</Link>
                         </li>
                         <li className="nav-item">
                             <Link smooth={true} to='contacts' offset={-110} className="nav-link" onClick={handleClick} >Contact</Link>

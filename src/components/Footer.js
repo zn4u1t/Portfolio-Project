@@ -22,18 +22,18 @@ const Footer = () => {
                     <div className='col-lg-3 col-md-2 col-sm-6'>
                         <div className='row'>
                             <div className='col'>
-                                <Link smooth={true} to='home' offset={-110} className="footer-nav" href="#">Home</Link>
+                                <Link smooth={false} to='home' offset={-110} className="footer-nav" href="#">Home</Link>
                                 <br />
-                                <Link smooth={true} to='about' offset={-110} className="footer-nav" href="#">About Me</Link>
+                                <Link smooth={false} to='about' offset={-80} className="footer-nav" href="#">About Me</Link>
                                 <br />
-                                <Link smooth={true} to='services' offset={-110} className="footer-nav" href="#">My Pages</Link>
+                                <Link smooth={false} to='services' offset={-110} className="footer-nav" href="#">My Pages</Link>
                             </div>
                             <div className='col'>
-                                <Link smooth={true} to='experience' offset={-110} className="footer-nav" href="#">Experience</Link>
+                                <Link smooth={false} to='experience' offset={-100} className="footer-nav" href="#">Experience</Link>
                                 <br />
-                                <Link smooth={true} to='portfolio' offset={-110} className="footer-nav" href="#">Portfolio</Link>
+                                <Link smooth={false} to='portfolio' offset={-90} className="footer-nav" href="#">Portfolio</Link>
                                 <br />
-                                <Link smooth={true} to='contacts' offset={-110} className="footer-nav" href="#">Contact</Link>
+                                <Link smooth={false} to='contacts' offset={-110} className="footer-nav" href="#">Contact</Link>
                             </div>
                         </div>
                     </div>

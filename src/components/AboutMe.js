@@ -20,7 +20,7 @@ const AboutMe = () => {
                         I have experience with Python, Javascript, HTML, CSS, and React. 
                         In my free time I like to hike, snowboard, trail run, and spend time with family and friends.
                         If you think I would be a good fit for your team, 
-                        please feel free to contact me via the contact form <Link smooth={true} to='contacts' offset={-110} className='about-contacts'>below.</Link> 
+                        please feel free to contact me via the contact form <Link smooth={false} to='contacts' offset={-110} className='about-contacts'>below.</Link> 
                         </p>
                     </div>
                 </div>
