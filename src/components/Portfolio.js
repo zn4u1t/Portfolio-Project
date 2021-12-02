@@ -3,6 +3,7 @@ import dogModel from '../images/dogModel.jpg';
 import threeLogos from '../images/threeLogos.png';
 import puzzle from '../images/puzzle.jpg';
 import twoPals from '../images/twoPals.jpg';
+import toolbox from '../images/toolbox.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
@@ -58,7 +59,7 @@ const openPopupboxProject3 = () => {
             <img className='portfolio-image-popupbox' src={puzzle} alt='Placeholder for project 3'/>
             <p>Some writing to fill in the blanks and take up space.
             This should have info about whatever project you add here.</p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://google.com', '_blank')}>https://google.com</a>
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/Random_number_game', '_blank')}>Random Number Game</a>
         </>
     )
     PopupboxManager.open({content})
@@ -66,13 +67,17 @@ const openPopupboxProject3 = () => {
 
 //Project 4
 
-const openPopupboxProject4 = () => {
+const openPopupboxToolbox = () => {
     const content = (
         <>
-            <img className='portfolio-image-popupbox' src={twoPals} alt='Placeholder for project 4'/>
-            <p>Some writing to fill in the blanks and take up space.
-            This should have info about whatever project you add here.</p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://google.com', '_blank')}>https://google.com</a>
+            <h2 className='popup-title'>My Tool Box</h2>
+            <img className='portfolio-image-popupbox' src={toolbox} alt='Placeholder for project 4'/>
+            <p>Here you will find some scripts, templates, and code snippets that I use to simplify work.</p>
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/dark-mode', '_blank')}>Dark to Light mode toggle for React</a>
+            <br />
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/dark-light-toggle', '_blank')}>Dark to Light toggle in HTML, CSS</a>
+            <br />
+            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/Glitch-text-effect', '_blank')}>Make text glitch with HTML, CSS</a>
         </>
     )
     PopupboxManager.open({content})
@@ -106,8 +111,8 @@ const openPopupboxProject4 = () => {
                         </div>
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-6'>
-                        <div className='portfolio-image-box' onClick={openPopupboxProject4}>
-                            <img className='portfolio-image' src={twoPals} alt='Max and Nikki' />
+                        <div className='portfolio-image-box' onClick={openPopupboxToolbox}>
+                            <img className='portfolio-image' src={toolbox} alt='Max and Nikki' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
                         </div>

@@ -14,7 +14,7 @@ const Header = () => {
                     backSpeed={60}
                     loop
                 />
-                <Link smooth={false} to='contacts' offset={-110} className="btn-main-offer-head" href="#">Contact Me</Link>
+                <Link smooth={false} to='contacts' offset={-110} className="animate__animated animate__fadeInBottomRight" href="#">Contact Me</Link>
             </div>
         </div>
     )

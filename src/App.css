@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&family=Notable&display=swap");
 
 :root {
   --primary-white: #fff;
@@ -66,9 +67,6 @@ nav ul li {
     width: 3.75rem;
     margin-top: 0.125rem;
   }
-  .navbar-nav > li > a:hover {
-    border-top: 0.1875rem solid var(--primary-orange);
-  }
 }
 
 .navbar-nav > li > a.active,
@@ -125,7 +123,7 @@ nav ul li {
   }
 }
 
-.btn-main-offer-head {
+.animate__animated.animate__fadeInBottomRight {
   border: 3px outset var(--primary-orange-darker);
   font-size: 16px;
   text-transform: uppercase;
@@ -135,7 +133,7 @@ nav ul li {
   margin: 2rem;
 }
 
-.btn-main-offer-head:hover {
+.animate__animated.animate__fadeInBottomRight:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);
   color: var(--primary-white);
@@ -174,7 +172,6 @@ nav ul li {
   border-radius: 50%;
   padding: 0.3rem;
   border: 2px solid var(--primary-orange-darker);
-  z-index: 2;
 }
 
 .about-heading {
@@ -191,6 +188,13 @@ nav ul li {
 
 .about-contacts {
   color: var(--primary-gray);
+}
+
+@media (max-width: 768px) {
+  .about p {
+    font-size: medium;
+    text-align: center;
+  }
 }
 
 @media (max-width: 468px) {
