@@ -73,8 +73,6 @@ const openPopupboxToolbox = () => {
             <h2 className='popup-title'>My Tool Box</h2>
             <img className='portfolio-image-popupbox' src={toolbox} alt='Placeholder for project 4'/>
             <p>Here you will find some scripts, templates, and code snippets that I use to simplify work.</p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/dark-mode', '_blank')}>Dark to Light mode toggle for React</a>
-            <br />
             <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/dark-light-toggle', '_blank')}>Dark to Light toggle in HTML, CSS</a>
             <br />
             <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/Glitch-text-effect', '_blank')}>Make text glitch with HTML, CSS</a>

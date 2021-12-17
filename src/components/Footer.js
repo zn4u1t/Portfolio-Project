@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='row'>
                     <div className='col-lg-4 col-md-6 col-sm-6'>
                         <div className='d-flex'>
-                            <p>City Candia Old Manchester Rd NH</p>
+                            <p>Candia NH, 03034</p>
                         </div>
                         <div className='d-flex'>
                             <a href='tel:555-555-5555'>(603)-289-0466</a>
@@ -26,12 +26,12 @@ const Footer = () => {
                                 <br />
                                 <Link smooth={false} to='about' offset={-80} className="footer-nav" href="#">About Me</Link>
                                 <br />
-                                <Link smooth={false} to='services' offset={-110} className="footer-nav" href="#">My Pages</Link>
+                                <Link smooth={false} to='portfolio' offset={-110} className="footer-nav" href="#">Portfolio</Link>
                             </div>
                             <div className='col'>
                                 <Link smooth={false} to='experience' offset={-100} className="footer-nav" href="#">Experience</Link>
                                 <br />
-                                <Link smooth={false} to='portfolio' offset={-90} className="footer-nav" href="#">Portfolio</Link>
+                                <Link smooth={false} to='services' offset={-90} className="footer-nav" href="#">My Pages</Link>
                                 <br />
                                 <Link smooth={false} to='contacts' offset={-110} className="footer-nav" href="#">Contact</Link>
                             </div>
