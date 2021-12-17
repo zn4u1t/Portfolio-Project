@@ -82,7 +82,7 @@ nav ul li {
 .header-wrapper {
   position: relative;
   background: url(background.jpg);
-  filter: brightness(75%);
+  filter: brightness(85%);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -214,7 +214,7 @@ nav ul li {
 .services {
   text-align: center;
   padding-bottom: 2rem;
-  background-image: linear-gradient(180deg, rgb(22, 15, 13), #121212);
+  background: var(--dark-mode);
 }
 
 .services h1 {
@@ -394,7 +394,7 @@ nav ul li {
 /*******************PORTFOLIO**************************/
 
 .portfolio-wrapper {
-  background: var(--dark-mode);
+  background-image: linear-gradient(180deg, rgb(22, 15, 13), #121212);
   padding: 3rem 0;
 }
 

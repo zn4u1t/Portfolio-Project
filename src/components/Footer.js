@@ -39,9 +39,9 @@ const Footer = () => {
                     </div>
                     <div className='col-lg-5 col-md-5 col-sm-6 align-items-center'>
                         <div className='d-flex justify-content-center'>
-                            <a href='https://www.facebook.com' target='_blank'>
+                            <a href='https://www.facebook.com' target='_blank' rel='noopener'>
                             <div className='circle'><FontAwesomeIcon className='icon' icon={faFacebookF} size='2x'/></div></a>
-                            <a href='https://github.com/zn4u1t' target='_blank'>
+                            <a href='https://github.com/zn4u1t' target='_blank' rel='noopener'>
                             <div className='circle'><FontAwesomeIcon className='icon' icon={faGithub} size='2x'/></div></a>
                         </div>
                         <p className='pt-3 text-center'>
