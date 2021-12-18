@@ -1,9 +1,8 @@
 import React from 'react';
 import dogModel from '../images/dogModel.jpg';
-import threeLogos from '../images/threeLogos.png';
-import puzzle from '../images/puzzle.jpg';
-import twoPals from '../images/twoPals.jpg';
-import toolbox from '../images/toolbox.jpg';
+import threeLogos from '../images/threeLogos.webp';
+import puzzle from '../images/puzzle.webp';
+import toolbox from '../images/toolbox.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
