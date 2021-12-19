@@ -2,6 +2,7 @@ import React from 'react';
 import dogModel from '../images/dogModel.jpg';
 import threeLogos from '../images/threeLogos.webp';
 import puzzle from '../images/puzzle.webp';
+import puzzleThumbnail from '../images/puzzle.jpg';
 import toolbox from '../images/toolbox.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
@@ -95,7 +96,7 @@ const openPopupboxToolbox = () => {
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-6'>
                         <div className='portfolio-image-box' onClick={openPopupboxPuzzleCam}>
-                            <img className='portfolio-image' src={puzzle} alt='Puzzle Cam...' />
+                            <img className='portfolio-image' src={puzzleThumbnail} alt='Puzzle Cam...' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
                         </div>

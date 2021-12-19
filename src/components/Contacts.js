@@ -18,7 +18,6 @@ const Contacts = () => {
         name: data.name,
         phone: data.phone,
         email: data.email,
-        subject: data.subject,
         description: data.description
       },
       userID
@@ -42,7 +41,7 @@ const Contacts = () => {
       </div>
       <div className="container">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-md-6 col-xs-12">
               {/* NAME INPUT */}
               <div className="text-center">
@@ -80,26 +79,12 @@ const Contacts = () => {
                 />
                 <div className="line"></div>
               </div>
-              {/* SUBJECT INPUT */}
-              <div className="text-center">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Subject"
-                  name="subject"
-                  message = 'Please enter a subject with less than 50 characters'
-                  {...register("subject", { required: true, maxLength: 50 })}
-                />
-                <div className="line"></div>
-              </div>
-            </div>
-            <div className="col-md-6 col-xs-12">
               {/* DESCRIPTION */}
               <div className="text-center">
                 <textarea
                   type="text"
                   className="form-control"
-                  placeholder="Please provide a brief description."
+                  placeholder="Message"
                   name="description"
                   message = 'Please enter a description with less than 1000 characters'
                   {...register("description", { required: true, maxLength: 1000 })}

@@ -81,7 +81,7 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url(background.jpg);
+  background: url(images/background.jpg);
   filter: brightness(85%);
   background-size: cover;
   background-position: center;
