@@ -1,6 +1,7 @@
 import React from 'react';
 import author from '../images/me.jpg';
 import { Link } from 'react-scroll';
+import './AboutMe.css';
 
 
 const AboutMe = () => {

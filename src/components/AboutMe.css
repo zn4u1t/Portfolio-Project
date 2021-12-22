@@ -1,0 +1,51 @@
+.about {
+  background-image: linear-gradient(180deg, rgb(37, 9, 1), rgb(22, 15, 13));
+}
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 2px solid var(--primary-orange-darker);
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+}
+
+.about p {
+  color: var(--primary-gray);
+  font-size: x-large;
+  z-index: 2;
+}
+
+.about-contacts {
+  color: var(--primary-gray);
+}
+
+@media (max-width: 768px) {
+  .about p {
+    font-size: medium;
+    text-align: center;
+  }
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+  .about p {
+    font-size: medium;
+  }
+  .about-heading {
+    text-align: center;
+  }
+}

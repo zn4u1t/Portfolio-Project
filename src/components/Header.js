@@ -29,7 +29,7 @@ const text = "ZACH NAULT'S WEBSITE PORTFOLIO";
             <div className='typed-text'>
                 <Typed 
                     className='typed-text'
-                    strings={['proficient in:','Basic Web Design (html, css and js)', 'React', 'Python Programming']}
+                    strings={['proficient in:','Basic Web Design (html, css and js)', 'React', 'Python Programming',]}
                     typeSpeed={40}
                     backSpeed={60}
                     loop
