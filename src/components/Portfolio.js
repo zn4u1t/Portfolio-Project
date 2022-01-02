@@ -22,9 +22,9 @@ const openPopupboxRockPaper = () => {
             <p>A rock paper scissors game based off a Youtube tutorial I followed.
                 The game uses features such as; HTML, CSS, and JS.
             </p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/rock-paper-scissor', '_blank')}>Rock-Paper-Scissors</a>
+            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/rock-paper-scissor' target='_blank' rel='noreferrer'>Rock-Paper-Scissors</a>
             <br />
-            <b>Try it out!:</b> <a className='hyper-link' onClick={() => window.open('https://rock-paper-portfolio.netlify.app/', '_blank')}>Rock-Paper-Scissors</a>
+            <b>Try it out!:</b> <a className='hyper-link' href='https://rock-paper-portfolio.netlify.app/' target='_blank' rel='noreferrer'>Rock-Paper-Scissors</a>
         </>
     )
     PopupboxManager.open({content})
@@ -46,7 +46,7 @@ const openPopupboxPuzzleCam = () => {
             <h2 className='popup-title'>Puzzle Cam</h2>
             <img className='portfolio-image-popupbox' src={puzzle} alt='Placeholder for project 2'/>
             <p>A work in progress puzzle game, that uses your camera to generate a puzzle.</p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/Puzzlecam-game', '_blank')}>Puzzle Cam Repo</a>
+            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Puzzlecam-game' target='_blank' rel='noreferrer'>Puzzle Cam Repo</a>
         </>
     )
     PopupboxManager.open({content})
@@ -60,7 +60,7 @@ const openPopupboxProject3 = () => {
             <img className='portfolio-image-popupbox' src={puzzle} alt='Placeholder for project 3'/>
             <p>Some writing to fill in the blanks and take up space.
             This should have info about whatever project you add here.</p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/Random_number_game', '_blank')}>Random Number Game</a>
+            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Random_number_game' target='_blank' rel='noreferrer'>Random Number Game</a>
         </>
     )
     PopupboxManager.open({content})
@@ -74,9 +74,9 @@ const openPopupboxToolbox = () => {
             <h2 className='popup-title'>My Tool Box</h2>
             <img className='portfolio-image-popupbox' src={toolbox} alt='Placeholder for project 4'/>
             <p>Here you will find some scripts, templates, and code snippets that I use to simplify work.</p>
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/dark-light-toggle', '_blank')}>Dark to Light toggle in HTML, CSS</a>
+            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/dark-light-toggle' target='_blank' rel='noreferrer'>Dark to Light toggle in HTML, CSS</a>
             <br />
-            <b>Github:</b> <a className='hyper-link' onClick={() => window.open('https://github.com/zn4u1t/Glitch-text-effect', '_blank')}>Make text glitch with HTML, CSS</a>
+            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Glitch-text-effect' target='_blank' rel='noreferrer'>Make text glitch with HTML, CSS</a>
         </>
     )
     PopupboxManager.open({content})

@@ -14,8 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header>
-      </Header>
+      <Header />
       <AboutMe />
       <Portfolio />
       <Experience />

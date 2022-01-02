@@ -5,7 +5,7 @@ import './Contacts.css';
 
 const Contacts = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const serviceID = "service_id";
   const templateID = "template_id";

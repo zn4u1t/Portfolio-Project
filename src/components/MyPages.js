@@ -12,7 +12,7 @@ const MyPages = () => {
                     <div className='row'>
                         <div className='col-lg-3 col-md-6 col-sm-6'>
                             <div className='box'>
-                                <a href='https://github.com/zn4u1t' target='_blank' rel='noopener'>
+                                <a href='https://github.com/zn4u1t' target='_blank' rel='noreferrer'>
                                 <div className='circle'><FontAwesomeIcon className='icon' icon={faGithub} size='4x'/></div></a>
                                 <h3>Github</h3>
                                 <p>Check out some of my repos</p>
@@ -20,7 +20,7 @@ const MyPages = () => {
                         </div>
                         <div className='col-lg-3 col-md-6 col-sm-6'>
                             <div className='box'>
-                                <a href='https://www.linkedin.com/in/zach-nault-abbb2aa0/' target='_blank' rel='noopener'>
+                                <a href='https://www.linkedin.com/in/zach-nault-abbb2aa0/' target='_blank' rel='noreferrer'>
                                 <div className='circle'><FontAwesomeIcon className='icon' icon={faLinkedin} size='4x'/></div></a>
                                 <h3>Linkedin</h3>
                                 <p></p>
@@ -28,7 +28,7 @@ const MyPages = () => {
                         </div>
                         <div className='col-lg-3 col-md-6 col-sm-6'>
                             <div className='box'>
-                                <a href='https://www.youtube.com/channel/UCefyNJcOfEYZbn_ISTIGMMQ' target='_blank' rel='noopener'>
+                                <a href='https://www.youtube.com/channel/UCefyNJcOfEYZbn_ISTIGMMQ' target='_blank' rel='noreferrer'>
                                 <div className='circle'><FontAwesomeIcon className='icon' icon={faYoutube} size='4x'/></div></a>
                                 <h3>Youtube</h3>
                                 <p>My youtube channel</p>

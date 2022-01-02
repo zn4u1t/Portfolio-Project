@@ -35,7 +35,7 @@ const text = "ZACH NAULT'S WEBSITE PORTFOLIO";
                     loop
                 />
             </div>
-                <Link smooth={false} to='contacts' offset={-110} className="animate__animated animate__fadeInBottomRight" href="#">Contact Me</Link>
+                <Link to='contacts' offset={-110} className="animate__animated animate__fadeInBottomRight" href="#">Contact Me</Link>
             </div>
         </div>
     )

@@ -23,26 +23,26 @@ const Footer = () => {
                     <div className='col-lg-3 col-md-2 col-sm-6'>
                         <div className='row'>
                             <div className='col'>
-                                <Link smooth={false} to='home' offset={-110} className="footer-nav" href="#">Home</Link>
+                                <Link to='home' offset={-110} className="footer-nav" >Home</Link>
                                 <br />
-                                <Link smooth={false} to='about' offset={-80} className="footer-nav" href="#">About Me</Link>
+                                <Link to='about' offset={-80} className="footer-nav" >About Me</Link>
                                 <br />
-                                <Link smooth={false} to='portfolio' offset={-110} className="footer-nav" href="#">Portfolio</Link>
+                                <Link to='portfolio' offset={-110} className="footer-nav" >Portfolio</Link>
                             </div>
                             <div className='col'>
-                                <Link smooth={false} to='experience' offset={-100} className="footer-nav" href="#">Experience</Link>
+                                <Link to='experience' offset={-100} className="footer-nav" >Experience</Link>
                                 <br />
-                                <Link smooth={false} to='services' offset={-90} className="footer-nav" href="#">My Pages</Link>
+                                <Link to='services' offset={-90} className="footer-nav" >My Pages</Link>
                                 <br />
-                                <Link smooth={false} to='contacts' offset={-110} className="footer-nav" href="#">Contact</Link>
+                                <Link to='contacts' offset={-110} className="footer-nav" >Contact</Link>
                             </div>
                         </div>
                     </div>
                     <div className='col-lg-5 col-md-5 col-sm-6 align-items-center'>
                         <div className='d-flex justify-content-center'>
-                            <a href='https://www.facebook.com' target='_blank' rel='noopener'>
+                            <a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
                             <div className='circle'><FontAwesomeIcon className='icon' icon={faFacebookF} size='2x'/></div></a>
-                            <a href='https://github.com/zn4u1t' target='_blank' rel='noopener'>
+                            <a href='https://github.com/zn4u1t' target='_blank' rel='noreferrer'>
                             <div className='circle'><FontAwesomeIcon className='icon' icon={faGithub} size='2x'/></div></a>
                         </div>
                         <p className='pt-3 text-center'>
