@@ -1,8 +1,8 @@
 import React from 'react';
 import dogModel from '../images/dogModel.jpg';
 import threeLogos from '../images/threeLogos.webp';
-import puzzle from '../images/puzzle.webp';
-import puzzleThumbnail from '../images/puzzle.jpg';
+import helmet from '../images/helmet.png';
+import python from '../images/python.png';
 import toolbox from '../images/toolbox.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
@@ -40,13 +40,13 @@ const popupboxConfigRockPaper = {
 }
 //Puzzle Camera Game
 
-const openPopupboxPuzzleCam = () => {
+const openPopupboxMagicMemory = () => {
     const content = (
         <>
-            <h2 className='popup-title'>Puzzle Cam</h2>
-            <img className='portfolio-image-popupbox' src={puzzle} alt='Placeholder for project 2'/>
-            <p>A work in progress puzzle game, that uses your camera to generate a puzzle.</p>
-            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Puzzlecam-game' target='_blank' rel='noreferrer'>Puzzle Cam Repo</a>
+            <h2 className='popup-title'>Magic Memory Game</h2>
+            <img className='portfolio-image-popupbox' src={helmet} alt='A helmet'/>
+            <p>A work in progress magic memory game built in React.</p>
+            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/magic-memory' target='_blank' rel='noreferrer'>Magic Memory Game Repo</a>
         </>
     )
     PopupboxManager.open({content})
@@ -57,10 +57,11 @@ const openPopupboxPuzzleCam = () => {
 const openPopupboxProject3 = () => {
     const content = (
         <>
-            <img className='portfolio-image-popupbox' src={puzzle} alt='Placeholder for project 3'/>
-            <p>Some writing to fill in the blanks and take up space.
-            This should have info about whatever project you add here.</p>
+            <img className='portfolio-image-popupbox' src={python} alt='Placeholder for project 3'/>
+            <p>Some python scripts</p>
             <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Random_number_game' target='_blank' rel='noreferrer'>Random Number Game</a>
+            <br />
+            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/enigma-machine' target='_blank' rel='noreferrer'>Enigma Machine</a>
         </>
     )
     PopupboxManager.open({content})
@@ -96,15 +97,15 @@ const openPopupboxToolbox = () => {
                         </div>
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-6'>
-                        <div className='portfolio-image-box' onClick={openPopupboxPuzzleCam}>
-                            <img className='portfolio-image' src={puzzleThumbnail} alt='Puzzle Cam...' />
+                        <div className='portfolio-image-box' onClick={openPopupboxMagicMemory}>
+                            <img className='portfolio-image' src={helmet} alt='A helmet...' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
                         </div>
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-6'>
                         <div className='portfolio-image-box' onClick={openPopupboxProject3}>
-                            <img className='portfolio-image' src={dogModel} alt='Max laying in the sun...' />
+                            <img className='portfolio-image' src={python} alt='Max laying in the sun...' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
                         </div>
