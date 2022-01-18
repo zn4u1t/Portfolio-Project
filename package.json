@@ -33,6 +33,7 @@
     "react-typed": "^1.2.0",
     "styled-components": "^5.3.3",
     "tsparticles": "^1.36.0",
+    "underscore": "^1.13.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

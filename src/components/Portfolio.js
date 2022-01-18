@@ -1,5 +1,5 @@
 import React from 'react';
-import dogModel from '../images/dogModel.jpg';
+import { Link } from 'react-router-dom';
 import threeLogos from '../images/threeLogos.webp';
 import helmet from '../images/helmet.png';
 import python from '../images/python.png';
@@ -47,6 +47,8 @@ const openPopupboxMagicMemory = () => {
             <img className='portfolio-image-popupbox' src={helmet} alt='A helmet'/>
             <p>A work in progress magic memory game built in React.</p>
             <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/magic-memory' target='_blank' rel='noreferrer'>Magic Memory Game Repo</a>
+            <br />
+            <b>Play Now!</b> <Link to='/game' >Magic Memory Game!</Link>
         </>
     )
     PopupboxManager.open({content})

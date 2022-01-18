@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import logo from '../images/logo.jpg';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +9,7 @@ import './Navbar.css';
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
+    const history = useHistory()
  
     const handleClick = (e) => {
         e.preventDefault();
@@ -26,10 +28,15 @@ const Navbar = () => {
         }
     }
 
+    const handleHome = (e) => {
+        e.preventDefault()
+        history.push('/Portfolio-Project')
+    }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
             <div className='container'>   
-                <a className="navbar-brand" href="#top"><img className='logo' src={logo} alt='logo...'/></a>
+                <a className="navbar-brand" href="/Portfolio-Project"><img className='logo' src={logo} alt='logo...'/></a>
                 <button id="toggler" onClick={handleState}  className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={faBars} style={{ color: '#fff' }}/>
                 </button>
@@ -37,7 +44,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <Link to='home' className="nav-link" onClick={handleClick} >Home <span className="sr-only">(current)</span></Link>
+                            <Link to='home' className="nav-link" onClick={handleHome} >Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
                             <Link to='about' offset={-80} className="nav-link" onClick={handleClick} >About Me</Link>
