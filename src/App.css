@@ -26,12 +26,12 @@ body {
 .header-wrapper {
   position: relative;
   background: url(images/background.jpg);
+  mask-image: linear-gradient(transparent 3%, rgb(37, 9, 1) 25%);
   filter: brightness(85%);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-
 .main-info {
   display: flex;
   position: absolute;
@@ -46,18 +46,15 @@ body {
   font-family: "Amatic SC", cursive;
   z-index: 1;
 }
-
 .main-info span {
   color: var(--primary-blue);
   text-transform: uppercase;
   font-size: 48px;
 }
-
 .typed-text span {
   font-size: 2rem;
   color: var(--primary-white);
 }
-
 @media (max-width: 768px) {
   .main-info h1 {
     font-size: 1.7rem !important;
@@ -66,7 +63,6 @@ body {
     font-size: 1.3rem !important;
   }
 }
-
 .animate__animated.animate__fadeInBottomRight {
   border: 3px outset var(--primary-orange-darker);
   font-size: 16px;
@@ -76,14 +72,12 @@ body {
   color: var(--primary-white);
   margin: 2rem;
 }
-
 .animate__animated.animate__fadeInBottomRight:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);
   color: var(--primary-white);
   transition: 0.2s ease-in-out;
 }
-
 .btn-main-offer {
   border: 3px outset var(--primary-orange-darker);
   text-transform: uppercase;
@@ -92,7 +86,6 @@ body {
   color: #b0b0b0;
   margin: 2rem;
 }
-
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);

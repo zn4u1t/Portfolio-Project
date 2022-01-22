@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import logo from '../images/logo.jpg';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +8,6 @@ import './Navbar.css';
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
-    const history = useHistory()
  
     const handleClick = (e) => {
         e.preventDefault();
@@ -28,11 +26,6 @@ const Navbar = () => {
         }
     }
 
-    const handleHome = (e) => {
-        e.preventDefault()
-        history.push('/Portfolio-Project')
-    }
-
     return (
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
             <div className='container'>   
@@ -44,7 +37,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <Link to='home' className="nav-link" onClick={handleHome} >Home <span className="sr-only">(current)</span></Link>
+                            <Link to='home' className="nav-link" onClick={handleClick} >Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
                             <Link to='about' offset={-80} className="nav-link" onClick={handleClick} >About Me</Link>
@@ -62,8 +55,10 @@ const Navbar = () => {
                             <Link to='contacts' offset={-110} className="nav-link" onClick={handleClick} >Contact</Link>
                         </li>
                     </ul>
-
                 </div>
+            </div>
+            <div className='container-top'>
+                <a href="#" className='top'></a>
             </div>
         </nav>
     )

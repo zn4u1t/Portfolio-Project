@@ -6,7 +6,8 @@
   text-align: center;
   background: #121212;
   color: #fff;
-  padding-top: 100px;
+  height: fit-content;
+  padding-top: 50px;
 }
 button {
   background: none;

@@ -5,7 +5,7 @@ import Baffle from "baffle-react";
 
 const Header = () => {
 
-const text = "ZACH NAULT'S WEBSITE PORTFOLIO";
+const text = "ZAchary's WEBSITE PORTFOLIO";
 
     return (
         <div id='home' className='header-wrapper'>
@@ -29,7 +29,7 @@ const text = "ZACH NAULT'S WEBSITE PORTFOLIO";
             <div className='typed-text'>
                 <Typed 
                     className='typed-text'
-                    strings={['proficient in:','Basic Web Design (html, css and js)', 'React', 'Python Programming',]}
+                    strings={['An ever evolving','Work In Progress', 'Using some technologies like:', 'React, HTML, Python, CSS, Javascript, and more...',]}
                     typeSpeed={40}
                     backSpeed={60}
                     loop

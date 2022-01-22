@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import threeLogos from '../images/threeLogos.webp';
 import helmet from '../images/helmet.png';
 import python from '../images/python.png';
@@ -9,6 +8,7 @@ import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import 'react-popupbox/dist/react-popupbox.css';
 import './Portfolio.css';
+import GameApp from '../pages/GameApp';
 
 const Portfolio = () => {
 
@@ -38,7 +38,7 @@ const popupboxConfigRockPaper = {
     fadeIn: true,
     fadeInSpeed:500
 }
-//Puzzle Camera Game
+//Magic memory game
 
 const openPopupboxMagicMemory = () => {
     const content = (
@@ -48,8 +48,19 @@ const openPopupboxMagicMemory = () => {
             <p>A work in progress magic memory game built in React.</p>
             <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/magic-memory' target='_blank' rel='noreferrer'>Magic Memory Game Repo</a>
             <br />
-            <b>Play Now!</b> <Link to='/game' >Magic Memory Game!</Link>
+            <button className='play-button' onClick={openPopupboxMagicGame}>Play Now</button>
         </>
+    )
+    PopupboxManager.open({content})
+}
+
+// Popup within a popup? Is this bad practice?
+
+const openPopupboxMagicGame = () => {
+    const content = (
+        <div className='game'>
+            <GameApp />
+        </div>
     )
     PopupboxManager.open({content})
 }
