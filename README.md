@@ -1,5 +1,11 @@
 https://zn4u1t.github.io/Portfolio-Project/
 
+My portfolio website displaying my different projects, experience, and pages.
+
+Based on a tutoiral from Udemy, and utilizing multiple different libraries such as: bootstrap, styled-components, fortawesome, animate.css, baffle, emailjs, react-router, react-scroll, and many more.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
