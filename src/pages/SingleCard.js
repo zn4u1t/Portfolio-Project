@@ -4,7 +4,7 @@ import cover from '../images/cover.png';
 export default function SingleCard({ card, handleChoice, flipped, disabled }) {
 
     const handleClick = () => {
-        if (!disabled) {
+        if (!disabled && !flipped) {
             handleChoice(card)
         }
     }
