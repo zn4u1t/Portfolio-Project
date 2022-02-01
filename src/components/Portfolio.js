@@ -1,8 +1,5 @@
 import React from 'react';
-import threeLogos from '../images/threeLogos.webp';
-import helmet from '../images/helmet.png';
-import python from '../images/python.png';
-import toolbox from '../images/toolbox.webp';
+import ScrollLock from 'react-scroll-lock-component'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus} from '@fortawesome/free-solid-svg-icons';
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
@@ -10,22 +7,30 @@ import 'react-popupbox/dist/react-popupbox.css';
 import './Portfolio.css';
 import GameApp from '../pages/GameApp';
 
+// images
+import threeLogos from '../images/threeLogos.webp';
+import helmet from '../images/helmet.png';
+import python from '../images/python.png';
+import toolbox from '../images/toolbox.webp';
+
 const Portfolio = () => {
 
 //Rock-Paper-Scissors
 
 const openPopupboxRockPaper = () => {
     const content = (
-        <>
-            <h2 className='popup-title'>Rock Paper Scissors Game</h2>
-            <img className='portfolio-image-popupbox' src={threeLogos} alt='HTML, CSS, JS Logos...'/>
-            <p>A rock paper scissors game based off a Youtube tutorial I followed.
-                The game uses features such as; HTML, CSS, and JS.
-            </p>
-            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/rock-paper-scissor' target='_blank' rel='noreferrer'>Rock-Paper-Scissors</a>
-            <br />
-            <b>Try it out!:</b> <a className='hyper-link' href='https://rock-paper-portfolio.netlify.app/' target='_blank' rel='noreferrer'>Rock-Paper-Scissors</a>
-        </>
+        <ScrollLock>
+            <div>
+                <h2 className='popup-title'>Rock Paper Scissors Game</h2>
+                <img className='portfolio-image-popupbox' src={threeLogos} alt='HTML, CSS, JS Logos...'/>
+                <p>A rock paper scissors game based off a Youtube tutorial I followed.
+                    The game uses features such as; HTML, CSS, and JS.
+                </p>
+                <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/rock-paper-scissor' target='_blank' rel='noreferrer'>Rock-Paper-Scissors</a>
+                <br />
+                <b>Try it out!:</b> <a className='hyper-link' href='https://rock-paper-portfolio.netlify.app/' target='_blank' rel='noreferrer'>Rock-Paper-Scissors</a>
+            </div>
+        </ScrollLock>
     )
     PopupboxManager.open({content})
 }
@@ -42,14 +47,16 @@ const popupboxConfigRockPaper = {
 
 const openPopupboxMagicMemory = () => {
     const content = (
-        <>
-            <h2 className='popup-title'>Magic Memory Game</h2>
-            <img className='portfolio-image-popupbox' src={helmet} alt='A helmet'/>
-            <p>A work in progress magic memory game built in React.</p>
-            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/magic-memory' target='_blank' rel='noreferrer'>Magic Memory Game Repo</a>
-            <br />
-            <button className='play-button' onClick={openPopupboxMagicGame}>Play Now</button>
-        </>
+        <ScrollLock>
+            <div>
+                <h2 className='popup-title'>Magic Memory Game</h2>
+                <img className='portfolio-image-popupbox' src={helmet} alt='A helmet'/>
+                <p>A work in progress magic memory game built in React.</p>
+                <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/magic-memory' target='_blank' rel='noreferrer'>Magic Memory Game Repo</a>
+                <br />
+                <button className='play-button' onClick={openPopupboxMagicGame}>Play Now</button>
+            </div>
+        </ScrollLock>
     )
     PopupboxManager.open({content})
 }
@@ -58,9 +65,11 @@ const openPopupboxMagicMemory = () => {
 
 const openPopupboxMagicGame = () => {
     const content = (
-        <div className='game'>
-            <GameApp />
-        </div>
+        <ScrollLock>
+            <div className='game'>
+                <GameApp />
+            </div>
+        </ScrollLock>
     )
     PopupboxManager.open({content})
 }
@@ -69,13 +78,15 @@ const openPopupboxMagicGame = () => {
 
 const openPopupboxProject3 = () => {
     const content = (
-        <>
-            <img className='portfolio-image-popupbox' src={python} alt='Placeholder for project 3'/>
-            <p>Some python scripts</p>
-            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Random_number_game' target='_blank' rel='noreferrer'>Random Number Game</a>
-            <br />
-            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/enigma-machine' target='_blank' rel='noreferrer'>Enigma Machine</a>
-        </>
+        <ScrollLock>
+            <div>
+                <img className='portfolio-image-popupbox' src={python} alt='Placeholder for project 3'/>
+                <p>Some python scripts</p>
+                <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Random_number_game' target='_blank' rel='noreferrer'>Random Number Game</a>
+                <br />
+                <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/enigma-machine' target='_blank' rel='noreferrer'>Enigma Machine</a>
+            </div>
+        </ScrollLock>
     )
     PopupboxManager.open({content})
 }
@@ -84,14 +95,16 @@ const openPopupboxProject3 = () => {
 
 const openPopupboxToolbox = () => {
     const content = (
-        <>
-            <h2 className='popup-title'>My Tool Box</h2>
-            <img className='portfolio-image-popupbox' src={toolbox} alt='Placeholder for project 4'/>
-            <p>Here you will find some scripts, templates, and code snippets that I use to simplify work.</p>
-            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/dark-light-toggle' target='_blank' rel='noreferrer'>Dark to Light toggle in HTML, CSS</a>
-            <br />
-            <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Glitch-text-effect' target='_blank' rel='noreferrer'>Make text glitch with HTML, CSS</a>
-        </>
+        <ScrollLock>
+            <div>
+                <h2 className='popup-title'>My Tool Box</h2>
+                <img className='portfolio-image-popupbox' src={toolbox} alt='Placeholder for project 4'/>
+                <p>Here you will find some scripts, templates, and code snippets that I use to simplify work.</p>
+                <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/dark-light-toggle' target='_blank' rel='noreferrer'>Dark to Light toggle in HTML, CSS</a>
+                <br />
+                <b>Github:</b> <a className='hyper-link' href='https://github.com/zn4u1t/Glitch-text-effect' target='_blank' rel='noreferrer'>Make text glitch with HTML, CSS</a>
+            </div>
+        </ScrollLock>
     )
     PopupboxManager.open({content})
 }
