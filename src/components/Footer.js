@@ -27,7 +27,7 @@ const Footer = () => {
                                 <br />
                                 <Link to='about' offset={-80} className="footer-nav" >About Me</Link>
                                 <br />
-                                <Link to='portfolio' offset={-110} className="footer-nav" >Portfolio</Link>
+                                <Link to='projects' offset={-110} className="footer-nav" >Projects</Link>
                             </div>
                             <div className='col'>
                                 <Link to='experience' offset={-100} className="footer-nav" >Experience</Link>

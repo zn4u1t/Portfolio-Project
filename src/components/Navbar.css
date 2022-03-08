@@ -44,53 +44,13 @@ nav ul li {
   }
 }
 
-.navbar-nav > li > a.active,
+/* .navbar-nav > li > a.active,
 .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
-}
+} */
 
+.navbar-nav > li > a:active,
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
-/****************  Back to top button *******************/
-
-.container-top {
-  offset: 100px;
-  display: flex;
-  align-items: flex-end;
-  width: 50px;
-  justify-self: end;
-  justify-content: flex-end;
-  mask: linear-gradient(
-    #0000 calc(100vh + var(--offset)),
-    #000 calc(100vh + var(--offset) + var(--fade))
-  );
-}
-
-.top {
-  position: sticky;
-  bottom: 20px;
-  margin-right: 10px;
-
-  /* visual styling */
-  width: 100%;
-  aspect-ratio: 1;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.top:before {
-  content: "";
-  position: absolute;
-  inset: 30%;
-  transform: translateY(20%) rotate(-45deg);
-  border-top: 5px solid #fff;
-  border-right: 5px solid #fff;
-}
-
-@media (max-width: 768px) {
-  .top {
-    visibility: hidden;
-  }
-}

@@ -109,40 +109,51 @@ const openPopupboxToolbox = () => {
     PopupboxManager.open({content})
 }
  
+//Project 5
+
+const openPopupboxCooking = () => {
+    const content = (
+        <ScrollLock>
+            <div>
+                <h2 className='popup-title'>My Tool Box</h2>
+                <img className='portfolio-image-popupbox' src={toolbox} alt='Placeholder for project 4'/>
+                <p>Here you will find some scripts, templates, and code snippets that I use to simplify work.</p>
+                <br />
+                <b>Demo Site:</b> <a className='hyper-link' href='https://my-little-cookbook.web.app/' target='_blank' rel='noreferrer'>My Little Cookbook</a>
+            </div>
+        </ScrollLock>
+    )
+    PopupboxManager.open({content})
+}
 
     return (
         <div id='portfolio' className='portfolio-wrapper'>
             <div className='container'>
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
-                <div className='row'>
-                    <div className='col-lg-3 col-md-6 col-sm-6'>
-                        <div className='portfolio-image-box' onClick={openPopupboxRockPaper}>
-                            <img className='portfolio-image' src={threeLogos} alt='HTML, CSS, JS Logos...' /> 
-                            <div className='overflow'></div>
-                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
-                        </div>
-                    </div>
-                    <div className='col-lg-3 col-md-6 col-sm-6'>
-                        <div className='portfolio-image-box' onClick={openPopupboxMagicMemory}>
-                            <img className='portfolio-image' src={helmet} alt='A helmet...' />
-                            <div className='overflow'></div>
-                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
-                        </div>
-                    </div>
-                    <div className='col-lg-3 col-md-6 col-sm-6'>
-                        <div className='portfolio-image-box' onClick={openPopupboxProject3}>
-                            <img className='portfolio-image' src={python} alt='Max laying in the sun...' />
-                            <div className='overflow'></div>
-                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
-                        </div>
-                    </div>
-                    <div className='col-lg-3 col-md-6 col-sm-6'>
-                        <div className='portfolio-image-box' onClick={openPopupboxToolbox}>
-                            <img className='portfolio-image' src={toolbox} alt='Max and Nikki' />
-                            <div className='overflow'></div>
-                            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
-                        </div>
-                    </div>
+                <div className='portfolio-image-box' onClick={openPopupboxRockPaper}>
+                    <img className='portfolio-image' src={threeLogos} alt='HTML, CSS, JS Logos...' /> 
+                    <div className='overflow'></div>
+                    <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                </div>
+                <div className='portfolio-image-box' onClick={openPopupboxMagicMemory}>
+                    <img className='portfolio-image' src={helmet} alt='A helmet...' />
+                    <div className='overflow'></div>
+                    <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                </div>
+                <div className='portfolio-image-box' onClick={openPopupboxProject3}>
+                    <img className='portfolio-image' src={python} alt='Max laying in the sun...' />
+                    <div className='overflow'></div>
+                    <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                </div>
+                <div className='portfolio-image-box' onClick={openPopupboxToolbox}>
+                    <img className='portfolio-image' src={toolbox} alt='Max and Nikki' />
+                    <div className='overflow'></div>
+                    <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+                </div>
+                <div className='portfolio-image-box' onClick={openPopupboxCooking}>
+                    <img className='portfolio-image' src={toolbox} alt='Max and Nikki' />
+                    <div className='overflow'></div>
+                    <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
                 </div>
             </div>
             <PopupboxContainer {...popupboxConfigRockPaper}/>

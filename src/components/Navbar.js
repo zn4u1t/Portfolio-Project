@@ -43,7 +43,7 @@ const Navbar = () => {
                             <Link to='about' offset={-80} className="nav-link" onClick={handleClick} >About Me</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='portfolio' offset={-90} className="nav-link" onClick={handleClick} >Portfolio</Link>
+                            <Link to='projects' offset={-90} className="nav-link" onClick={handleClick} >Projects</Link>
                         </li>
                         <li className="nav-item">
                             <Link to='experience' offset={-100} className="nav-link" onClick={handleClick} >Experience</Link>
@@ -56,9 +56,6 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div className='container-top'>
-                <a href="#" className='top'></a>
             </div>
         </nav>
     )

@@ -9,10 +9,10 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import MyPages from './components/MyPages';
 import Experience from './components/Experience';
-import Portfolio from './components/Portfolio';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import GameApp from './pages/GameApp';
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route exact path='/Portfolio-Project'>
             <Header />
             <AboutMe />
-            <Portfolio />
+            <Projects />
             <Experience />
             <MyPages />
             <Contacts />
