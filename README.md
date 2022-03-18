@@ -2,7 +2,7 @@ https://zn4u1t.github.io/Portfolio-Project/
 
 My portfolio website displaying my different projects, experience, and pages.
 
-Based on a tutoiral from Udemy, and utilizing multiple different libraries such as: bootstrap, styled-components, fortawesome, animate.css, baffle, emailjs, react-router, react-scroll, and many more.
+Based on a tutorial from Udemy, and utilizing multiple different libraries such as: bootstrap, styled-components, fortawesome, animate.css, baffle, emailjs, react-router, react-scroll, and many more.
 
 
 
